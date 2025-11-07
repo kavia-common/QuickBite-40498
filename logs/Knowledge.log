@@ -1,0 +1,381 @@
+2025-11-07 08:09:53,738 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-07 08:09:54,028 - Knowledge - INFO - Starting Knowledge Graph processing with 50 threads
+2025-11-07 08:09:54,161 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-07 08:09:55,681 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-07 08:09:55,825 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-07 08:09:55,963 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-07 08:09:56,141 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-07 08:09:56,280 - Knowledge - INFO - load persisted knowledge: end
+2025-11-07 08:09:56,443 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2025-11-07 08:09:56,621 - Knowledge - INFO - Redis support added with prefix knowledge:b3668dt:
+2025-11-07 08:09:56,971 - Knowledge - INFO - Starting knowledge initialization for ID: NAf1fJ-b3668dt
+2025-11-07 08:09:57,161 - Knowledge - INFO - 🔍 Checking Redis for build_id: b3668dt
+2025-11-07 08:09:57,302 - Knowledge - INFO - 🔍 Full session ID: NAf1fJ-b3668dt
+2025-11-07 08:09:57,491 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b3668dt:
+2025-11-07 08:09:57,657 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-07 08:09:57,834 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-07 08:09:57,991 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b3668dt
+2025-11-07 08:09:59,698 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-07 08:10:01,568 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2025-11-07 08:10:01,745 - Knowledge - INFO - load persisted docinfo: begin
+2025-11-07 08:10:01,895 - Knowledge - INFO - load persisted docinfo: end
+2025-11-07 08:10:02,105 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-07 08:10:02,240 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2025-11-07 08:10:02,412 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-07 08:10:02,599 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b3668dt
+2025-11-07 08:10:04,440 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-07 08:10:04,598 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2025-11-07 08:10:04,739 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-07 08:10:04,893 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-07 08:10:05,094 - Knowledge - INFO - load persisted knowledge: end
+2025-11-07 08:10:05,266 - Knowledge - INFO - 📁 Disk load complete in 3.56s
+2025-11-07 08:10:05,432 - Knowledge - INFO - Populating ingest queue with source files...
+2025-11-07 08:10:05,846 - Knowledge - INFO - Added 68 files from /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498 to ingest queue
+2025-11-07 08:10:06,016 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2025-11-07 08:10:06,157 - Knowledge - INFO - knowledge worker kw1 start
+2025-11-07 08:10:06,157 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2025-11-07 08:10:06,297 - Knowledge - INFO - [kw1] Queue=68, InProgress=0, PendingWorkers=0/1, Completed=0/68 (0.0%)
+2025-11-07 08:10:06,370 - Knowledge - INFO - knowledge worker kw2 start
+2025-11-07 08:10:06,370 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2025-11-07 08:10:06,462 - Knowledge - INFO - Dynamic batch size: 40 for queue=68
+2025-11-07 08:10:06,543 - Knowledge - INFO - [kw2] Queue=68, InProgress=0, PendingWorkers=0/2, Completed=0/68 (0.0%)
+2025-11-07 08:10:06,624 - Knowledge - INFO - knowledge worker kw3 start
+2025-11-07 08:10:06,625 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2025-11-07 08:10:06,685 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Cart/cart.module.css
+2025-11-07 08:10:06,765 - Knowledge - INFO - Dynamic batch size: 20 for queue=68
+2025-11-07 08:10:06,853 - Knowledge - INFO - [kw3] Queue=28, InProgress=0, PendingWorkers=1/3, Completed=0/68 (0.0%)
+2025-11-07 08:10:06,968 - Knowledge - INFO - knowledge worker kw4 start
+2025-11-07 08:10:06,968 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2025-11-07 08:10:07,041 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Cart/cart.module.css (ext=.css, size=1811)
+2025-11-07 08:10:07,157 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/orderRoute.js
+2025-11-07 08:10:07,268 - Knowledge - INFO - Dynamic batch size: 20 for queue=28
+2025-11-07 08:10:07,372 - Knowledge - INFO - [kw4] Queue=8, InProgress=0, PendingWorkers=2/4, Completed=0/68 (0.0%)
+2025-11-07 08:10:07,453 - Knowledge - INFO - knowledge worker kw5 start
+2025-11-07 08:10:07,453 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2025-11-07 08:10:07,521 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Cart/Cart.jsx
+2025-11-07 08:10:07,621 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/orderRoute.js (ext=.js, size=498)
+2025-11-07 08:10:07,706 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Sidebar/Sidebar.jsx
+2025-11-07 08:10:07,778 - Knowledge - INFO - Dynamic batch size: 8 for queue=8
+2025-11-07 08:10:07,933 - Knowledge - INFO - knowledge worker kw6 start
+2025-11-07 08:10:07,943 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2025-11-07 08:10:08,087 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/PlaceOrder/PlaceOrder.jsx
+2025-11-07 08:10:08,201 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/userRoute.js
+2025-11-07 08:10:08,305 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Sidebar/Sidebar.jsx (ext=.jsx, size=759)
+2025-11-07 08:10:08,527 - Knowledge - INFO - knowledge worker kw7 start
+2025-11-07 08:10:08,529 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2025-11-07 08:10:08,631 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/PlaceOrder/placeorder.module.css
+2025-11-07 08:10:08,732 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/userRoute.js (ext=.js, size=249)
+2025-11-07 08:10:08,799 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/assets/assets.js
+2025-11-07 08:10:08,953 - Knowledge - INFO - knowledge worker kw8 start
+2025-11-07 08:10:08,956 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2025-11-07 08:10:09,023 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/PlaceOrder/placeorder.module.css (ext=.css, size=609)
+2025-11-07 08:10:09,132 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/server.js
+2025-11-07 08:10:09,234 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/assets/assets.js (ext=.js, size=423)
+2025-11-07 08:10:09,391 - Knowledge - INFO - knowledge worker kw9 start
+2025-11-07 08:10:09,392 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2025-11-07 08:10:09,499 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Home/Home.jsx
+2025-11-07 08:10:09,569 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/server.js (ext=.js, size=958)
+2025-11-07 08:10:09,650 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/index.css
+2025-11-07 08:10:09,820 - Knowledge - INFO - knowledge worker kw10 start
+2025-11-07 08:10:09,820 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2025-11-07 08:10:09,887 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Home/Home.jsx (ext=.jsx, size=655)
+2025-11-07 08:10:09,994 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/config/db.js
+2025-11-07 08:10:10,076 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/index.css (ext=.css, size=546)
+2025-11-07 08:10:10,260 - Knowledge - INFO - knowledge worker kw11 start
+2025-11-07 08:10:10,260 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2025-11-07 08:10:10,333 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Verify/verify.module.css
+2025-11-07 08:10:10,420 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/config/db.js (ext=.js, size=178)
+2025-11-07 08:10:10,497 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/package.json
+2025-11-07 08:10:10,634 - Knowledge - INFO - knowledge worker kw12 start
+2025-11-07 08:10:10,634 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2025-11-07 08:10:10,710 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Verify/verify.module.css (ext=.css, size=320)
+2025-11-07 08:10:10,798 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/middleware/auth.js
+2025-11-07 08:10:10,893 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/package.json (ext=.json, size=732)
+2025-11-07 08:10:11,054 - Knowledge - INFO - knowledge worker kw13 start
+2025-11-07 08:10:11,055 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2025-11-07 08:10:11,131 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Verify/Verify.jsx
+2025-11-07 08:10:11,205 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/middleware/auth.js (ext=.js, size=504)
+2025-11-07 08:10:11,274 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/eslint.config.js
+2025-11-07 08:10:11,453 - Knowledge - INFO - knowledge worker kw14 start
+2025-11-07 08:10:11,453 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2025-11-07 08:10:11,524 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Verify/Verify.jsx (ext=.jsx, size=946)
+2025-11-07 08:10:11,608 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/userController.js
+2025-11-07 08:10:11,691 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/eslint.config.js (ext=.js, size=1003)
+2025-11-07 08:10:11,821 - Knowledge - INFO - knowledge worker kw15 start
+2025-11-07 08:10:11,821 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2025-11-07 08:10:11,933 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Orders/MyOrders.jsx
+2025-11-07 08:10:12,015 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/cartController.js
+2025-11-07 08:10:12,094 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/index.html
+2025-11-07 08:10:12,277 - Knowledge - INFO - knowledge worker kw16 start
+2025-11-07 08:10:12,278 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2025-11-07 08:10:12,358 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Orders/MyOrders.jsx (ext=.jsx, size=1739)
+2025-11-07 08:10:12,436 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/cartController.js (ext=.js, size=1565)
+2025-11-07 08:10:12,548 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/index.html (ext=.html, size=370)
+2025-11-07 08:10:12,732 - Knowledge - INFO - knowledge worker kw17 start
+2025-11-07 08:10:12,733 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2025-11-07 08:10:12,803 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Orders/myOrder.module.css
+2025-11-07 08:10:12,882 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/orderController.js
+2025-11-07 08:10:12,992 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/vite.config.js
+2025-11-07 08:10:13,194 - Knowledge - INFO - knowledge worker kw18 start
+2025-11-07 08:10:13,194 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2025-11-07 08:10:13,260 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Orders/myOrder.module.css (ext=.css, size=893)
+2025-11-07 08:10:13,368 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/foodController.js
+2025-11-07 08:10:13,471 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/vite.config.js (ext=.js, size=161)
+2025-11-07 08:10:13,654 - Knowledge - INFO - knowledge worker kw19 start
+2025-11-07 08:10:13,655 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2025-11-07 08:10:13,727 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/main.jsx
+2025-11-07 08:10:13,831 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/foodController.js (ext=.js, size=1300)
+2025-11-07 08:10:13,917 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Readme.md
+2025-11-07 08:10:14,084 - Knowledge - INFO - knowledge worker kw20 start
+2025-11-07 08:10:14,086 - Knowledge - INFO - Worker kw21 created using shared MongoDB connection pool
+2025-11-07 08:10:14,180 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/main.jsx (ext=.jsx, size=373)
+2025-11-07 08:10:14,291 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/List/list.css
+2025-11-07 08:10:14,363 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Readme.md (ext=.md, size=3634)
+2025-11-07 08:10:14,546 - Knowledge - INFO - knowledge worker kw21 start
+2025-11-07 08:10:14,547 - Knowledge - INFO - Worker kw22 created using shared MongoDB connection pool
+2025-11-07 08:10:14,619 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/App.jsx
+2025-11-07 08:10:14,686 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/List/list.css (ext=.css, size=546)
+2025-11-07 08:10:14,785 - Knowledge - INFO - Processing batch of 8 files
+2025-11-07 08:10:14,852 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 288, Duration: 0ms
+2025-11-07 08:10:14,960 - Knowledge - INFO - knowledge worker kw22 start
+2025-11-07 08:10:14,960 - Knowledge - INFO - Worker kw23 created using shared MongoDB connection pool
+2025-11-07 08:10:15,066 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/App.jsx (ext=.jsx, size=1068)
+2025-11-07 08:10:15,144 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/List/List.jsx
+2025-11-07 08:10:15,222 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Sidebar/Sidebar.jsx
+2025-11-07 08:10:15,293 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 441ms
+2025-11-07 08:10:15,517 - Knowledge - INFO - knowledge worker kw23 start
+2025-11-07 08:10:15,518 - Knowledge - INFO - Worker kw24 created using shared MongoDB connection pool
+2025-11-07 08:10:15,586 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/ExploreMenu/explore.module.css
+2025-11-07 08:10:15,665 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/List/List.jsx (ext=.jsx, size=1474)
+2025-11-07 08:10:15,757 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/assets/assets.js
+2025-11-07 08:10:15,866 - Knowledge - INFO - Progress: 11.8% | Files: 8/68 | Rate: 0.38 files/sec | Queue: 0
+2025-11-07 08:10:16,020 - Knowledge - INFO - knowledge worker kw24 start
+2025-11-07 08:10:16,020 - Knowledge - INFO - Worker kw25 created using shared MongoDB connection pool
+2025-11-07 08:10:16,079 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/ExploreMenu/explore.module.css (ext=.css, size=1044)
+2025-11-07 08:10:16,149 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Add/add.css
+2025-11-07 08:10:16,255 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/index.css
+2025-11-07 08:10:16,472 - Knowledge - INFO - knowledge worker kw25 start
+2025-11-07 08:10:16,473 - Knowledge - INFO - Worker kw26 created using shared MongoDB connection pool
+2025-11-07 08:10:16,554 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/ExploreMenu/ExploreMenu.jsx
+2025-11-07 08:10:16,668 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Add/add.css (ext=.css, size=680)
+2025-11-07 08:10:16,773 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/package.json
+2025-11-07 08:10:16,947 - Knowledge - INFO - knowledge worker kw26 start
+2025-11-07 08:10:16,948 - Knowledge - INFO - Worker kw27 created using shared MongoDB connection pool
+2025-11-07 08:10:17,044 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/ExploreMenu/ExploreMenu.jsx (ext=.jsx, size=1045)
+2025-11-07 08:10:17,170 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Add/Add.jsx
+2025-11-07 08:10:17,244 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/eslint.config.js
+2025-11-07 08:10:17,385 - Knowledge - INFO - knowledge worker kw27 start
+2025-11-07 08:10:17,386 - Knowledge - INFO - Worker kw28 created using shared MongoDB connection pool
+2025-11-07 08:10:17,460 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Navbar/navbar.module.css
+2025-11-07 08:10:17,540 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Orders/Orders.jsx
+2025-11-07 08:10:17,654 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/index.html
+2025-11-07 08:10:17,845 - Knowledge - INFO - knowledge worker kw28 start
+2025-11-07 08:10:17,846 - Knowledge - INFO - Worker kw29 created using shared MongoDB connection pool
+2025-11-07 08:10:17,928 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Navbar/navbar.module.css (ext=.css, size=2424)
+2025-11-07 08:10:18,004 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Orders/orders.css
+2025-11-07 08:10:18,086 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/vite.config.js
+2025-11-07 08:10:18,255 - Knowledge - INFO - knowledge worker kw29 start
+2025-11-07 08:10:18,255 - Knowledge - INFO - Worker kw30 created using shared MongoDB connection pool
+2025-11-07 08:10:18,342 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Navbar/Navbar.jsx
+2025-11-07 08:10:18,408 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Orders/orders.css (ext=.css, size=867)
+2025-11-07 08:10:18,479 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Readme.md
+2025-11-07 08:10:18,629 - Knowledge - INFO - knowledge worker kw30 start
+2025-11-07 08:10:18,704 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/foodDisplay/FoodDisplay.jsx
+2025-11-07 08:10:18,783 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/main.jsx
+2025-11-07 08:10:19,035 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/foodDisplay/FoodDisplay.jsx (ext=.jsx, size=794)
+2025-11-07 08:10:19,136 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/main.jsx (ext=.jsx, size=249)
+2025-11-07 08:10:19,203 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/foodDisplay/fooddisplay.module.css
+2025-11-07 08:10:19,338 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/App.jsx
+2025-11-07 08:10:19,432 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/foodDisplay/fooddisplay.module.css (ext=.css, size=307)
+2025-11-07 08:10:19,551 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/App.jsx (ext=.jsx, size=844)
+2025-11-07 08:10:19,629 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Header/header.module.css
+2025-11-07 08:10:19,735 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Nabar/Navbar.css
+2025-11-07 08:10:19,835 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Header/header.module.css (ext=.css, size=1037)
+2025-11-07 08:10:19,943 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Nabar/Navbar.css (ext=.css, size=195)
+2025-11-07 08:10:20,014 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Header/Header.jsx
+2025-11-07 08:10:20,120 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Nabar/Navbar.jsx
+2025-11-07 08:10:20,206 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Header/Header.jsx (ext=.jsx, size=477)
+2025-11-07 08:10:20,292 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Nabar/Navbar.jsx (ext=.jsx, size=321)
+2025-11-07 08:10:20,410 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Login/LoginPopUp.jsx
+2025-11-07 08:10:20,504 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Sidebar/SideBar.css
+2025-11-07 08:10:20,628 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Login/loginPopUp.module.css
+2025-11-07 08:10:20,707 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Sidebar/SideBar.css (ext=.css, size=716)
+2025-11-07 08:10:20,808 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Login/loginPopUp.module.css (ext=.css, size=1310)
+2025-11-07 08:10:21,020 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/AppDownload/appdownload.module.css
+2025-11-07 08:10:21,209 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/AppDownload/appdownload.module.css (ext=.css, size=488)
+2025-11-07 08:10:21,349 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/AppDownload/AppDownload.jsx
+2025-11-07 08:10:21,512 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/AppDownload/AppDownload.jsx (ext=.jsx, size=499)
+2025-11-07 08:10:21,688 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/FoodItem/fooditem.module.css
+2025-11-07 08:10:21,836 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/FoodItem/fooditem.module.css (ext=.css, size=1192)
+2025-11-07 08:10:21,981 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/FoodItem/FoodItem.jsx
+2025-11-07 08:10:22,159 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/FoodItem/FoodItem.jsx (ext=.jsx, size=1475)
+2025-11-07 08:10:22,310 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Footer/Footer.jsx
+2025-11-07 08:10:22,485 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Footer/Footer.jsx (ext=.jsx, size=1497)
+2025-11-07 08:10:22,627 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Footer/footer.module.css
+2025-11-07 08:10:22,780 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Footer/footer.module.css (ext=.css, size=1153)
+2025-11-07 08:10:22,936 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/context/StoreContext.jsx
+2025-11-07 08:10:23,090 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/assets/assets.js
+2025-11-07 08:10:23,255 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/index.css
+2025-11-07 08:10:23,400 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/index.css (ext=.css, size=438)
+2025-11-07 08:10:23,543 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/package.json
+2025-11-07 08:10:23,707 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/package.json (ext=.json, size=702)
+2025-11-07 08:10:23,854 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/eslint.config.js
+2025-11-07 08:10:24,008 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/eslint.config.js (ext=.js, size=1001)
+2025-11-07 08:10:24,154 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/index.html
+2025-11-07 08:10:24,383 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/index.html (ext=.html, size=362)
+2025-11-07 08:10:24,542 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/vite.config.js
+2025-11-07 08:10:24,689 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/vite.config.js (ext=.js, size=163)
+2025-11-07 08:10:24,871 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/package.json
+2025-11-07 08:10:25,054 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/package.json (ext=.json, size=517)
+2025-11-07 08:10:25,202 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/orderModel.js
+2025-11-07 08:10:25,420 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/orderModel.js (ext=.js, size=517)
+2025-11-07 08:10:25,703 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/foodModel.js
+2025-11-07 08:10:26,024 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/foodModel.js (ext=.js, size=455)
+2025-11-07 08:10:26,462 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/userModel.js
+2025-11-07 08:10:26,773 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/userModel.js (ext=.js, size=410)
+2025-11-07 08:10:27,140 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/cartRoute.js
+2025-11-07 08:10:27,325 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/cartRoute.js (ext=.js, size=391)
+2025-11-07 08:10:27,357 - Knowledge - INFO - [LLM_CALL] Completed: Orders.jsx:chunk1, Duration: 3936ms, PromptTokens: 1926, CompletionTokens: 280, Cost: $0.00000
+2025-11-07 08:10:27,505 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/foodRoute.js
+2025-11-07 08:10:27,578 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Orders/Orders.jsx
+2025-11-07 08:10:27,683 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/foodRoute.js (ext=.js, size=567)
+2025-11-07 08:10:27,812 - Knowledge - INFO - [LLM_CALL] Completed: Add.jsx:chunk1, Duration: 5222ms, PromptTokens: 4210, CompletionTokens: 573, Cost: $0.00000
+2025-11-07 08:10:27,957 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Add/Add.jsx
+2025-11-07 08:10:28,397 - Knowledge - INFO - [LLM_CALL] Completed: userController.js:chunk1, Duration: 7477ms, PromptTokens: 5998, CompletionTokens: 908, Cost: $0.00000
+2025-11-07 08:10:28,566 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/userController.js
+2025-11-07 08:10:28,995 - Knowledge - INFO - [LLM_CALL] Completed: orderController.js:chunk1, Duration: 7259ms, PromptTokens: 8206, CompletionTokens: 1354, Cost: $0.00000
+2025-11-07 08:10:29,135 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/orderController.js
+2025-11-07 08:10:29,445 - Knowledge - INFO - Processing batch of 20 files
+2025-11-07 08:10:29,633 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/orderRoute.js
+2025-11-07 08:10:29,797 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/userRoute.js
+2025-11-07 08:10:29,964 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/server.js
+2025-11-07 08:10:30,164 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/config/db.js
+2025-11-07 08:10:30,308 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/middleware/auth.js
+2025-11-07 08:10:30,486 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/userController.js
+2025-11-07 08:10:30,631 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/cartController.js
+2025-11-07 08:10:30,787 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/orderController.js
+2025-11-07 08:10:30,979 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/controllers/foodController.js
+2025-11-07 08:10:31,150 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/List/list.css
+2025-11-07 08:10:31,283 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/List/List.jsx
+2025-11-07 08:10:31,440 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Add/add.css
+2025-11-07 08:10:31,577 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Add/Add.jsx
+2025-11-07 08:10:31,747 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Orders/Orders.jsx
+2025-11-07 08:10:31,929 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/pages/Orders/orders.css
+2025-11-07 08:10:32,131 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/main.jsx
+2025-11-07 08:10:32,312 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/App.jsx
+2025-11-07 08:10:32,447 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Nabar/Navbar.css
+2025-11-07 08:10:32,629 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Nabar/Navbar.jsx
+2025-11-07 08:10:32,781 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Admin/src/components/Sidebar/SideBar.css
+2025-11-07 08:10:36,305 - Knowledge - INFO - [LLM_CALL] Completed: Cart.jsx:chunk1, Duration: 8348ms, PromptTokens: 10238, CompletionTokens: 1605, Cost: $0.00000
+2025-11-07 08:10:36,474 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Cart/Cart.jsx
+2025-11-07 08:10:36,480 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-07 08:10:36,987 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 507ms
+2025-11-07 08:10:38,032 - Knowledge - INFO - Progress: 41.2% | Files: 28/68 | Rate: 0.65 files/sec | Queue: 0
+2025-11-07 08:10:38,050 - Knowledge - INFO - [LLM_CALL] Completed: LoginPopUp.jsx:chunk1, Duration: 7283ms, PromptTokens: 12360, CompletionTokens: 1922, Cost: $0.00000
+2025-11-07 08:10:38,251 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Login/LoginPopUp.jsx
+2025-11-07 08:10:38,735 - Knowledge - INFO - [LLM_CALL] Completed: StoreContext.jsx:chunk1, Duration: 7115ms, PromptTokens: 14302, CompletionTokens: 2339, Cost: $0.00000
+2025-11-07 08:10:38,883 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/context/StoreContext.jsx
+2025-11-07 08:10:39,286 - Knowledge - INFO - [LLM_CALL] Completed: PlaceOrder.jsx:chunk1, Duration: 10151ms, PromptTokens: 17056, CompletionTokens: 2633, Cost: $0.00000
+2025-11-07 08:10:39,439 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/PlaceOrder/PlaceOrder.jsx
+2025-11-07 08:10:39,782 - Knowledge - INFO - [LLM_CALL] Completed: assets.js:chunk1, Duration: 7318ms, PromptTokens: 22990, CompletionTokens: 3177, Cost: $0.00000
+2025-11-07 08:10:39,979 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/assets/assets.js
+2025-11-07 08:10:40,212 - Knowledge - INFO - [LLM_CALL] Completed: Navbar.jsx:chunk1, Duration: 10272ms, PromptTokens: 24976, CompletionTokens: 3492, Cost: $0.00000
+2025-11-07 08:10:40,420 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Navbar/Navbar.jsx
+2025-11-07 08:10:40,735 - Knowledge - INFO - Processing batch of 40 files
+2025-11-07 08:10:40,897 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Cart/cart.module.css
+2025-11-07 08:10:41,036 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Cart/Cart.jsx
+2025-11-07 08:10:41,259 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/PlaceOrder/PlaceOrder.jsx
+2025-11-07 08:10:41,447 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/PlaceOrder/placeorder.module.css
+2025-11-07 08:10:41,627 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Home/Home.jsx
+2025-11-07 08:10:41,815 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Verify/verify.module.css
+2025-11-07 08:10:42,025 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Verify/Verify.jsx
+2025-11-07 08:10:42,183 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Orders/MyOrders.jsx
+2025-11-07 08:10:42,359 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/Pages/Orders/myOrder.module.css
+2025-11-07 08:10:42,550 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/main.jsx
+2025-11-07 08:10:42,677 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/App.jsx
+2025-11-07 08:10:42,827 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/ExploreMenu/explore.module.css
+2025-11-07 08:10:43,018 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/ExploreMenu/ExploreMenu.jsx
+2025-11-07 08:10:43,182 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Navbar/navbar.module.css
+2025-11-07 08:10:43,367 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Navbar/Navbar.jsx
+2025-11-07 08:10:43,524 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/foodDisplay/FoodDisplay.jsx
+2025-11-07 08:10:43,724 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/foodDisplay/fooddisplay.module.css
+2025-11-07 08:10:43,907 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Header/header.module.css
+2025-11-07 08:10:44,059 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Header/Header.jsx
+2025-11-07 08:10:44,198 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Login/LoginPopUp.jsx
+2025-11-07 08:10:44,371 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Login/loginPopUp.module.css
+2025-11-07 08:10:44,548 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/AppDownload/appdownload.module.css
+2025-11-07 08:10:44,686 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/AppDownload/AppDownload.jsx
+2025-11-07 08:10:44,860 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/FoodItem/fooditem.module.css
+2025-11-07 08:10:45,025 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/FoodItem/FoodItem.jsx
+2025-11-07 08:10:45,191 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Footer/Footer.jsx
+2025-11-07 08:10:45,351 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/components/Footer/footer.module.css
+2025-11-07 08:10:45,572 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/context/StoreContext.jsx
+2025-11-07 08:10:45,718 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/assets/assets.js
+2025-11-07 08:10:45,909 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/src/index.css
+2025-11-07 08:10:46,061 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/package.json
+2025-11-07 08:10:46,230 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/eslint.config.js
+2025-11-07 08:10:46,405 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/index.html
+2025-11-07 08:10:46,580 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Frontend/vite.config.js
+2025-11-07 08:10:46,711 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/package.json
+2025-11-07 08:10:46,871 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/orderModel.js
+2025-11-07 08:10:47,045 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/foodModel.js
+2025-11-07 08:10:47,228 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/models/userModel.js
+2025-11-07 08:10:47,401 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/cartRoute.js
+2025-11-07 08:10:47,558 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b3668dt/QuickBite-40498/Backend/routes/foodRoute.js
+2025-11-07 08:10:50,191 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-07 08:10:50,341 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 150ms
+2025-11-07 08:10:50,506 - Knowledge - INFO - Progress: 100.0% | Files: 68/68 | Rate: 1.20 files/sec | Queue: 0
+2025-11-07 08:10:50,702 - Knowledge - INFO - Knowledge creation complete
+2025-11-07 08:10:50,849 - Knowledge - INFO - ==================================================
+2025-11-07 08:10:51,021 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-07 08:10:51,160 - Knowledge - INFO - ==================================================
+2025-11-07 08:10:51,347 - Knowledge - INFO - Total processing time: 57.11 seconds (0.95 minutes)
+2025-11-07 08:10:51,543 - Knowledge - INFO - Files processed: 0
+2025-11-07 08:10:51,729 - Knowledge - INFO - Processing rate: 0.00 files/second
+2025-11-07 08:10:51,867 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2025-11-07 08:10:52,012 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2025-11-07 08:10:52,171 - Knowledge - INFO - LLM Processing: 74.38s (130.2%)
+2025-11-07 08:10:52,301 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2025-11-07 08:10:52,457 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2025-11-07 08:10:52,659 - Knowledge - INFO - WebSocket Communication: 1.10s (1.9%)
+2025-11-07 08:10:52,830 - Knowledge - INFO - 
+[LLM_STATS]
+2025-11-07 08:10:53,036 - Knowledge - INFO - Total LLM calls: 10
+2025-11-07 08:10:53,217 - Knowledge - INFO - Average LLM response time: 7438ms
+2025-11-07 08:10:53,354 - Knowledge - INFO - Average prompt tokens: 12226.2
+2025-11-07 08:10:53,541 - Knowledge - INFO - Average completion tokens: 1828.3
+2025-11-07 08:10:53,676 - Knowledge - INFO - Total prompt tokens: 122262
+2025-11-07 08:10:53,820 - Knowledge - INFO - Total completion tokens: 18283
+2025-11-07 08:10:53,993 - Knowledge - INFO - Total LLM cost: $0.0000
+2025-11-07 08:10:54,175 - Knowledge - INFO - 
+[DATABASE_STATS]
+2025-11-07 08:10:54,322 - Knowledge - INFO - MongoDB operations: 0
+2025-11-07 08:10:54,498 - Knowledge - INFO - Redis operations: 0
+2025-11-07 08:10:54,645 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2025-11-07 08:10:54,812 - Knowledge - INFO - WebSocket messages sent: 6
+2025-11-07 08:10:54,971 - Knowledge - INFO - Average message size: 144.7 bytes
+2025-11-07 08:10:55,144 - Knowledge - INFO - 
+[WORKER_STATS]
+2025-11-07 08:10:55,304 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2025-11-07 08:10:55,524 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2025-11-07 08:10:55,676 - Knowledge - INFO - ==================================================
+2025-11-07 08:10:55,824 - Knowledge - INFO - ==================================================
+2025-11-07 08:10:55,970 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-07 08:10:56,132 - Knowledge - INFO - ==================================================
+2025-11-07 08:10:56,319 - Knowledge - INFO - Total processing time: 62.14 seconds (1.04 minutes)
+2025-11-07 08:10:56,456 - Knowledge - INFO - Files processed: 68 of 68
+2025-11-07 08:10:56,608 - Knowledge - INFO - Processing rate: 1.09 files/second
+2025-11-07 08:10:56,786 - Knowledge - INFO - WebSocket messages sent: 3
+2025-11-07 08:10:56,942 - Knowledge - INFO - MongoDB operations: 68
+2025-11-07 08:10:57,124 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2025-11-07 08:10:57,286 - Knowledge - INFO - LLM costs: $0.0039
+2025-11-07 08:10:57,460 - Knowledge - INFO - Prompt tokens: 24976
+2025-11-07 08:10:57,600 - Knowledge - INFO - Completion tokens: 3492
+2025-11-07 08:10:57,749 - Knowledge - INFO - Updating org costs, total cost: 0.0038944000000000006
+2025-11-07 08:10:58,949 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
+2025-11-07 08:10:59,165 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-07 08:10:59,344 - Knowledge - INFO - Knowledge saved to Redis successfully
